@@ -47,9 +47,9 @@ export default function Component() {
               <TableHead>Status</TableHead>
               <TableHead className="hidden md:table-cell">Price</TableHead>
               <TableHead className="hidden md:table-cell">
-                Total Sales
+                Quantity Remaining
               </TableHead>
-              <TableHead className="hidden md:table-cell">Created at</TableHead>
+              <TableHead className="hidden md:table-cell">Last purchase</TableHead>
               <TableHead>
                 <span className="sr-only">Actions</span>
               </TableHead>
@@ -67,7 +67,7 @@ export default function Component() {
                 />
               </TableCell>
               <TableCell className="font-medium">
-                Laser Lemonade Machine
+              Surgical Masks
               </TableCell>
               <TableCell>
                 <Badge variant="secondary">Low</Badge>
@@ -104,7 +104,7 @@ export default function Component() {
                 />
               </TableCell>
               <TableCell className="font-medium">
-                Hypernova Headphones
+              ICU Ventilators
               </TableCell>
               <TableCell>
                 <Badge variant="outline">abundant</Badge>
@@ -140,7 +140,7 @@ export default function Component() {
                   width="64"
                 />
               </TableCell>
-              <TableCell className="font-medium">AeroGlow Desk Lamp</TableCell>
+              <TableCell className="font-medium">Surgical Gloves</TableCell>
               <TableCell>
                 <Badge variant="outline">abundant</Badge>
               </TableCell>
@@ -176,7 +176,7 @@ export default function Component() {
                 />
               </TableCell>
               <TableCell className="font-medium">
-                TechTonic Energy Drink
+              Antibiotics
               </TableCell>
               <TableCell>
                 <Badge variant="secondary">Low</Badge>
@@ -213,7 +213,7 @@ export default function Component() {
                 />
               </TableCell>
               <TableCell className="font-medium">
-                Gamer Gear Pro Controller
+              MRI Machines
               </TableCell>
               <TableCell>
                 <Badge variant="outline">abundant</Badge>
@@ -249,7 +249,7 @@ export default function Component() {
                   width="64"
                 />
               </TableCell>
-              <TableCell className="font-medium">Luminous VR Headset</TableCell>
+              <TableCell className="font-medium">Antibiotics</TableCell>
               <TableCell>
                 <Badge variant="outline">abundant</Badge>
               </TableCell>

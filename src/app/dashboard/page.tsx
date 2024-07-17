@@ -163,7 +163,7 @@ export default function Dashboard() {
                 <Package className="h-4 w-4" />
                 Inventory{" "}
                 <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                  14
+                  6
                 </Badge>
               </Link>
               <Link
