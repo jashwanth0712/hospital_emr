@@ -13,7 +13,72 @@ import {
   UserRound,
   Users,
 } from "lucide-react"
-
+import ArtworksList  from '@/components/ui/Inventory_list';
+const initialArtworks = [
+  {
+    id: 1,
+    name: 'Bandages',
+    quantity: 200,
+    category: 'Medical Supplies',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 2,
+    name: 'Surgical Masks',
+    quantity: 500,
+    category: 'Personal Protective Equipment (PPE)',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 3,
+    name: 'Gauze Pads',
+    quantity: 300,
+    category: 'Medical Supplies',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 4,
+    name: 'IV Fluids (Normal Saline)',
+    quantity: 100,
+    category: 'Medical Supplies',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 5,
+    name: 'Disposable Gloves',
+    quantity: 1000,
+    category: 'Personal Protective Equipment (PPE)',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 6,
+    name: 'Antiseptic Solution (Betadine)',
+    quantity: 50,
+    category: 'Medical Supplies',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 7,
+    name: 'Defibrillator',
+    quantity: 5,
+    category: 'Medical Equipment',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 8,
+    name: 'Oxygen Tanks',
+    quantity: 20,
+    category: 'Medical Equipment',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 9,
+    name: 'Wheelchairs',
+    quantity: 10,
+    category: 'Medical Equipment',
+    image: '/placeholder.svg'
+  }
+];
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
@@ -230,21 +295,23 @@ export default function Dashboard() {
           </DropdownMenu>
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-          <div className="flex items-center">
-            <h1 className="text-lg font-semibold md:text-2xl">Inventory</h1>
-          </div>
+         
           <div
             className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm" x-chunk="dashboard-02-chunk-1"
           >
-            <div className="flex flex-col items-center gap-1 text-center">
-              <h3 className="text-2xl font-bold tracking-tight">
-                You have no Inventory
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                You can start seeing the inventory after you add a product.
-              </p>
-              <Button className="mt-4">Add Product</Button>
-            </div>
+            {
+                initialArtworks.length > 0 ? (
+                  <ArtworksList artworksData={initialArtworks} />
+                ) : <div className="flex flex-col items-center gap-1 text-center">
+                <h3 className="text-2xl font-bold tracking-tight">
+                  No Inventory yet
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  ADd Inventory
+                </p>
+                <Button className="mt-4">Add Inventory</Button>
+              </div>
+              }
           </div>
         </main>
       </div>
