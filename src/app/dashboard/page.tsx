@@ -72,7 +72,7 @@ export default function Dashboard() {
                     <ReceiptIndianRupee className="h-4 w-4"/>
                     Billing
                 </Link>
-                <div class="border-t border-gray-300 my-1"></div>
+                <div className="border-t border-gray-300 my-1"></div>
 
                 <Link
                 href="#"
@@ -89,7 +89,7 @@ export default function Dashboard() {
                 Analytics
               </Link>
 
-              <div class="border-t border-gray-300 my-1"></div>
+              <div className="border-t border-gray-300 my-1"></div>
 
               <Link
                 href="#"
