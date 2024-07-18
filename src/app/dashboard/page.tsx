@@ -354,7 +354,7 @@ export default function Dashboard() {
         >
           {
               initialArtworks.length > 0 ? (
-                <ArtworksList artworksData={initialArtworks} />
+                <ArtworksList  />
               ) : <div className="flex flex-col items-center gap-1 text-center">
               <h3 className="text-2xl font-bold tracking-tight">
                 No Inventory yet
