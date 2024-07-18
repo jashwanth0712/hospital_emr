@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { MoreHorizontal } from "lucide-react"
+import { MoreHorizontal, PlusCircle ,File} from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -30,11 +30,27 @@ import {
 export default function Component() {
   return (
     <Card>
+      
       <CardHeader>
+        
         <CardTitle>Inventory</CardTitle>
         <CardDescription>
-          Manage your Inventory and view their status.
+          Manage your Hospital Inventory
         </CardDescription>
+        <div className="p-3 w-full flex justify-end items-center">
+        <Button size="sm" variant="outline" className="h-8 gap-1 m-3">
+                  <File className="h-3.5 w-3.5" />
+                  <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
+                    Export
+                  </span>
+                </Button>
+                <Button size="sm" className="h-8 gap-1">
+                  <PlusCircle className="h-3.5 w-3.5" />
+                  <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
+                    Add Product
+                  </span>
+                </Button>
+      </div>
       </CardHeader>
       <CardContent>
         <Table>
