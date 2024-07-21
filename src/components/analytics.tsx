@@ -44,9 +44,9 @@ export function Charts() {
           <CardHeader className="space-y-0 pb-2">
             <CardDescription>Today</CardDescription>
             <CardTitle className="text-4xl tabular-nums">
-              12,584{" "}
+              584{" "}
               <span className="font-sans text-sm font-normal tracking-normal text-muted-foreground">
-                steps
+                 Consultations
               </span>
             </CardTitle>
           </CardHeader>
@@ -138,13 +138,13 @@ export function Charts() {
                 >
                   <Label
                     position="insideBottomLeft"
-                    value="Average Steps"
+                    value="Average"
                     offset={10}
                     fill="hsl(var(--foreground))"
                   />
                   <Label
                     position="insideTopLeft"
-                    value="12,343"
+                    value="343"
                     className="text-lg"
                     fill="hsl(var(--foreground))"
                     offset={10}
@@ -156,13 +156,13 @@ export function Charts() {
           </CardContent>
           <CardFooter className="flex-col items-start gap-1">
             <CardDescription>
-              Over the past 7 days, you have walked{" "}
-              <span className="font-medium text-foreground">53,305</span> steps.
+                  number of patients consulted today.
+              <span className="font-medium text-foreground"></span> 
             </CardDescription>
             <CardDescription>
-              You need{" "}
-              <span className="font-medium text-foreground">12,584</span> more
-              steps to reach your goal.
+              
+              <span className="font-medium text-foreground"></span> 
+              
             </CardDescription>
           </CardFooter>
         </Card>
@@ -293,17 +293,17 @@ export function Charts() {
           className="max-w-xs" x-chunk="charts-01-chunk-2"
         >
           <CardHeader>
-            <CardTitle>Progress</CardTitle>
+            <CardTitle>Staff-to-Patient Ratio</CardTitle>
             <CardDescription>
-              You're average more steps a day this year than last year.
+              Number of staff available today, and no. of patients admitted today.
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
             <div className="grid auto-rows-min gap-2">
               <div className="flex items-baseline gap-1 text-2xl font-bold tabular-nums leading-none">
-                12,453
+                52 
                 <span className="text-sm font-normal text-muted-foreground">
-                  steps/day
+                  staff members
                 </span>
               </div>
               <ChartContainer
@@ -326,7 +326,7 @@ export function Charts() {
                   }}
                   data={[
                     {
-                      date: "2024",
+                      date: "",
                       steps: 12435,
                     },
                   ]}
@@ -352,9 +352,9 @@ export function Charts() {
             </div>
             <div className="grid auto-rows-min gap-2">
               <div className="flex items-baseline gap-1 text-2xl font-bold tabular-nums leading-none">
-                10,103
+                23
                 <span className="text-sm font-normal text-muted-foreground">
-                  steps/day
+                  Patients
                 </span>
               </div>
               <ChartContainer
@@ -377,7 +377,7 @@ export function Charts() {
                   }}
                   data={[
                     {
-                      date: "2023",
+                      date: "",
                       steps: 10103,
                     },
                   ]}
@@ -407,17 +407,16 @@ export function Charts() {
           className="max-w-xs" x-chunk="charts-01-chunk-3"
         >
           <CardHeader className="p-4 pb-0">
-            <CardTitle>Walking Distance</CardTitle>
+            <CardTitle>Patients Discharged</CardTitle>
             <CardDescription>
-              Over the last 7 days, your distance walked and run was 12.5 miles
-              per day.
+              Number of patients discharged in this week.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-row items-baseline gap-4 p-4 pt-0">
             <div className="flex items-baseline gap-1 text-3xl font-bold tabular-nums leading-none">
-              12.5
+              74
               <span className="text-sm font-normal text-muted-foreground">
-                miles/day
+                -
               </span>
             </div>
             <ChartContainer
@@ -490,7 +489,9 @@ export function Charts() {
         <Card
           className="max-w-xs" x-chunk="charts-01-chunk-4"
         >
+          
           <CardContent className="flex gap-4 p-4 pb-2">
+            
             <ChartContainer
               config={{
                 move: {
@@ -517,21 +518,21 @@ export function Charts() {
                 }}
                 data={[
                   {
-                    activity: "stand",
+                    activity: "Cardiovascular:",
                     value: (8 / 12) * 100,
-                    label: "8/12 hr",
+                    label: " 95%",
                     fill: "var(--color-stand)",
                   },
                   {
-                    activity: "exercise",
+                    activity: "Orthopedic:",
                     value: (46 / 60) * 100,
-                    label: "46/60 min",
+                    label: "90%",
                     fill: "var(--color-exercise)",
                   },
                   {
-                    activity: "move",
+                    activity: "Neurological:",
                     value: (245 / 360) * 100,
-                    label: "245/360 kcal",
+                    label: "92%",
                     fill: "var(--color-move)",
                   },
                 ]}
@@ -563,31 +564,31 @@ export function Charts() {
           <CardFooter className="flex flex-row border-t p-4">
             <div className="flex w-full items-center gap-2">
               <div className="grid flex-1 auto-rows-min gap-0.5">
-                <div className="text-xs text-muted-foreground">Move</div>
+                <div className="text-xs text-muted-foreground"></div>
                 <div className="flex items-baseline gap-1 text-2xl font-bold tabular-nums leading-none">
-                  562
+                
+                
                   <span className="text-sm font-normal text-muted-foreground">
-                    kcal
                   </span>
                 </div>
               </div>
-              <Separator orientation="vertical" className="mx-2 h-10 w-px" />
+              
               <div className="grid flex-1 auto-rows-min gap-0.5">
-                <div className="text-xs text-muted-foreground">Exercise</div>
+                <div className="text-xs text-muted-foreground"></div>
                 <div className="flex items-baseline gap-1 text-2xl font-bold tabular-nums leading-none">
-                  73
+                  
                   <span className="text-sm font-normal text-muted-foreground">
-                    min
+                    
                   </span>
                 </div>
               </div>
-              <Separator orientation="vertical" className="mx-2 h-10 w-px" />
+              
               <div className="grid flex-1 auto-rows-min gap-0.5">
-                <div className="text-xs text-muted-foreground">Stand</div>
+                <div className="text-xs text-muted-foreground"></div>
                 <div className="flex items-baseline gap-1 text-2xl font-bold tabular-nums leading-none">
-                  14
+                  
                   <span className="text-sm font-normal text-muted-foreground">
-                    hr
+                    
                   </span>
                 </div>
               </div>
@@ -595,6 +596,7 @@ export function Charts() {
           </CardFooter>
         </Card>
       </div>
+      
       <div className="grid w-full flex-1 gap-6">
         <Card
           className="max-w-xs" x-chunk="charts-01-chunk-5"
@@ -690,16 +692,16 @@ export function Charts() {
           className="max-w-xs" x-chunk="charts-01-chunk-6"
         >
           <CardHeader className="p-4 pb-0">
-            <CardTitle>Active Energy</CardTitle>
+            <CardTitle>Patients Admitted</CardTitle>
             <CardDescription>
-              You're burning an average of 754 calories per day. Good job!
+              Number of patients admitted in this week.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-row items-baseline gap-4 p-4 pt-2">
             <div className="flex items-baseline gap-2 text-3xl font-bold tabular-nums leading-none">
-              1,254
+              92
               <span className="text-sm font-normal text-muted-foreground">
-                kcal/day
+                -
               </span>
             </div>
             <ChartContainer
@@ -861,7 +863,7 @@ export function Charts() {
                   content={<ChartTooltipContent hideLabel />}
                   formatter={(value) => (
                     <div className="flex min-w-[120px] items-center text-xs text-muted-foreground">
-                      Time in bed
+                      Operating Room Utilization
                       <div className="ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums text-foreground">
                         {value}
                         <span className="font-normal text-muted-foreground">
