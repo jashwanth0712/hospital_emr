@@ -604,29 +604,29 @@ export function Charts() {
           <CardContent className="flex gap-4 p-4">
             <div className="grid items-center gap-2">
               <div className="grid flex-1 auto-rows-min gap-0.5">
-                <div className="text-sm text-muted-foreground">Move</div>
+                <div className="text-sm text-muted-foreground">Ultrasound</div>
                 <div className="flex items-baseline gap-1 text-xl font-bold tabular-nums leading-none">
-                  562/600
+                  32
                   <span className="text-sm font-normal text-muted-foreground">
-                    kcal
+                    Scans
                   </span>
                 </div>
               </div>
               <div className="grid flex-1 auto-rows-min gap-0.5">
-                <div className="text-sm text-muted-foreground">Exercise</div>
+                <div className="text-sm text-muted-foreground">CT Scan</div>
                 <div className="flex items-baseline gap-1 text-xl font-bold tabular-nums leading-none">
-                  73/120
+                  22
                   <span className="text-sm font-normal text-muted-foreground">
-                    min
+                    Scans
                   </span>
                 </div>
               </div>
               <div className="grid flex-1 auto-rows-min gap-0.5">
-                <div className="text-sm text-muted-foreground">Stand</div>
+                <div className="text-sm text-muted-foreground">MRI</div>
                 <div className="flex items-baseline gap-1 text-xl font-bold tabular-nums leading-none">
-                  8/12
+                  16
                   <span className="text-sm font-normal text-muted-foreground">
-                    hr
+                    Scans
                   </span>
                 </div>
               </div>
